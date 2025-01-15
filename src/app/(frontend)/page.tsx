@@ -1,5 +1,5 @@
-import { Plug } from '@/heros/Plug'
+import { Plug } from '@/heros/Plug';
 
-const PlugPage = () => <Plug />
+const PlugPage = () => <Plug />;
 
-export default PlugPage
+export default PlugPage;

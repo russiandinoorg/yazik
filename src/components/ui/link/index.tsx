@@ -1,9 +1,9 @@
-import classnames from 'classnames'
-import { type VariantProps, cva } from 'class-variance-authority'
-import * as React from 'react'
-import NextLink from 'next/link'
+import { type VariantProps, cva } from 'class-variance-authority';
+import classnames from 'classnames';
+import NextLink from 'next/link';
+import * as React from 'react';
 
-import styles from './link.module.scss'
+import styles from './link.module.scss';
 
 const linkVariants = cva('link', {
   defaultVariants: {
@@ -18,27 +18,27 @@ const linkVariants = cva('link', {
       default: styles.linkAccent,
     },
   },
-})
+});
 
 export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     VariantProps<typeof linkVariants> {
-  isLocal?: boolean
-  href: string
+  isLocal?: boolean;
+  href: string;
 }
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ isLocal = false, className, size, variant, href, ...props }) => {
-    const Comp = isLocal ? NextLink : 'a'
+    const Comp = isLocal ? NextLink : 'a';
     return (
       <Comp
-        href={href}
         className={classnames(linkVariants({ className, size, variant }))}
+        href={href}
         {...props}
       />
-    )
+    );
   },
-)
-Link.displayName = 'Link'
+);
+Link.displayName = 'Link';
 
-export { Link, linkVariants }
+export { Link, linkVariants };

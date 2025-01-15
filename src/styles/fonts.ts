@@ -1,10 +1,11 @@
-import ActayWide from 'next/font/local'
-import Jost from 'next/font/local'
+/* eslint-disable import/no-duplicates */
+import ActayWide from 'next/font/local';
+import Jost from 'next/font/local';
 
 const actayWide = ActayWide({
   src: '../../public/fonts/ActayWide-Bold.otf',
   variable: '--actayWide',
-})
+});
 
 const jost = Jost({
   src: [
@@ -25,6 +26,6 @@ const jost = Jost({
     },
   ],
   variable: '--jost',
-})
+});
 
-export { jost, actayWide }
+export { jost, actayWide };

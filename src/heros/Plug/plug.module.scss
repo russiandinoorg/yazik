@@ -1,0 +1,100 @@
+@import '@/styles/variables.scss';
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 130px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: $laptop-query) {
+  .wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 1fr;
+    gap: 45px;
+  }
+}
+
+.img_container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    background-image: url('/images/plug_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content_container{
+  width: 750px;
+  margin-top: 170px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  margin-bottom: 190px;
+}
+
+.subtitle{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.slogan{
+  margin-bottom: 28px;
+  color: $accent-color;
+}
+
+.description{
+  text-indent: 5em;
+}
+
+.description_wrapper{
+  margin-bottom: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (max-width: $laptop-query) {
+  .content_container{
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .description_wrapper{
+width: 50vw;
+align-self: flex-end;
+margin-bottom: 60px;
+  }
+  .subtitle{
+    justify-content: space-between;
+  }
+
+  .title{
+    margin-bottom: 50px;
+  }
+
+  .img_container{
+      background-position: top;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width: $tablet-query) {
+  .content_container{
+    width: 345px;
+  }
+
+  .slogan{
+    margin-bottom: 14px;
+  }
+
+  .description_wrapper{
+    width: 100%;
+    gap: 30px;
+      }
+}

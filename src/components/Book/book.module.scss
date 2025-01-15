@@ -1,0 +1,75 @@
+@import '@/styles/variables.scss';
+
+.container{
+  transform-style: preserve-3d;
+  animation: rotatingAnimationY 10s ease-in-out infinite;
+  div{
+    backface-visibility: visible;
+    background-position: 50% !important;
+    background-size: cover !important;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+}
+
+.book-container .book-bottom, .book-container .book-side-right, .book-container .book-top {
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  background-size: auto auto !important;
+}
+
+.book-container .book-top {
+  background-position: 100% 100% !important;
+}
+
+.front{
+  width: var(--x);
+  height: var(--y);
+  background: url('/images/book-cover.jpg');
+  transform: translate3d(calc((var(--x)/2) * -1), calc((var(--y)/2) * -1), calc(var(--z)/2)) translate3d(0, 0, 0) rotateY(0deg);
+}
+
+.sideLeft{
+  width: calc(1px + var(--z));
+  height: calc(1px + var(--y));
+  background: url('/images/book-spine.jpg');
+  transform: translate3d(calc(-1 * var(--x)/2), calc(-1 * var(--y)/2), calc(var(--z)/2)) translate3d(calc(-1 * var(--z)/2), 0, calc(-1 * var(--z)/2)) rotateY(-90deg);
+}
+
+.sideRight{
+  width: calc(1px + var(--z));
+    height: calc(1px + var(--y));
+    background: url('/images/book-side.jpg');
+    transform: translate3d(calc(-1 * var(--x)/2), calc(-1 * var(--y)/2), calc(var(--z)/2)) translate3d(calc(var(--x) - var(--z)/2), 0, calc(-1 * var(--z)/2)) rotateY(90deg);
+}
+
+.top{
+  width: calc(1px + var(--x));
+    height: var(--z);
+    background: url('/images/book-top.jpg');
+    transform: translate3d(calc(-1 * var(--x)/2), calc(-1 * var(--y)/2), calc(var(--z)/2)) translate3d(0px, calc(-1 * var(--z)/2), calc(-1 * var(--z)/2)) rotateX(90deg);
+}
+
+.bottom{
+  width: calc(1px + var(--x));
+    height: var(--z);
+    background: url('/images/book-top.jpg');
+    transform: translate3d(calc(-1 * var(--x)/2), calc(-1 * var(--y)/2), calc(var(--z)/2)) translate3d(0px, calc(var(--y) - var(--z)/2), calc(-1 * var(--z)/2)) rotateX(-90deg);
+}
+
+.back{
+  width: calc(1px + var(--x));
+    height: calc(1px + var(--y));
+    background: url('/images/book-back.jpg');
+    transform: translate3d(calc(-1 * var(--x)/2), calc(-1 * var(--y)/2), calc(var(--z)/2)) translate3d(0, 0, calc(-1 * var(--z))) rotateY(180deg);
+}
+
+@keyframes rotatingAnimationY {
+  0% {
+    transform: rotateY(0);
+}
+100% {
+    transform: rotateY(1turn);
+}
+}

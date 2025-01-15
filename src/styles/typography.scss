@@ -1,0 +1,81 @@
+.title {
+  font-family: var(--actayWide), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.title1 {
+  @extend .title;
+  font-size: 150px;
+}
+
+.title2 {
+  @extend .title;
+  font-size: 81px;
+}
+
+.title3 {
+  @extend .title;
+  font-size: 28px;
+  line-height: 110%;
+  letter-spacing: 0em;
+}
+
+.title4 {
+  @extend .title;
+  font-size: 24px;
+  font-variant: small-caps;
+}
+
+.text {
+  font-family: var(--jost), sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.text1 {
+  font-size: 28px;
+}
+
+.text2{
+  @extend .text;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: $laptop-query) {
+  .title1 {
+    font-size: 170px;
+  }
+
+  .title2 {
+    font-size: 102px;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: $tablet-query) {
+  .title1 {
+    font-size: 60px;
+  }
+
+  .title2 {
+    font-size: 37px;
+  }
+
+  .title3 {
+    font-size: 14px;
+  }
+
+  .text1 {
+    font-size: 16px;
+  }
+
+  .text2 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '@/styles/variables.scss';
+
+.linkResponsive{
+  width: 100%;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkAccent{
+  border: 2px solid #bf9d47;
+  box-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.32);
+  color: #bf9d47;
+  background: linear-gradient(238deg, #323232 0%, #0f0d0d 52%, #323232 100%);
+
+  font-family: var(--actayWide);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  font-variant: small-caps;
+
+  transition: all 0.3s ease-in-out 0s;
+
+  &:hover{
+    opacity: 80%;
+  }
+}
+
+
+@media screen and (max-width: $tablet-query) {
+  .linkAccent{
+    font-size: 14px;
+  }
+}

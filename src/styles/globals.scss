@@ -1,0 +1,26 @@
+@import 'reset', 'variables', 'typography';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --x: 400px;
+  --y: 540px;
+  --z: 58px;
+}
+
+body{
+  color: $base-color;
+  background-color: $base-background-color;
+  font-family: var(--jost), sans-serif;
+}
+
+@media screen and (max-width: $tablet-query) {
+  :root{
+    --x: 200px;
+    --y: 270px;
+  }
+}

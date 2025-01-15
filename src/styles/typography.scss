@@ -35,6 +35,7 @@
 }
 
 .text1 {
+  @extend .text;
   font-size: 28px;
 }
 

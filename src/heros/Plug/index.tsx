@@ -1,6 +1,6 @@
 import { Typography } from '@/components/ui/typography'
 import { Footer } from '@/components/globals/Footer'
-import { Link } from '@/components/ui/link/link'
+import { Link } from '@/components/ui/link'
 import { Book } from '@/components/Book'
 
 import styles from './plug.module.scss'
@@ -32,7 +32,7 @@ export const Plug = () => (
           egestas orci arcu non amet vulputate sollicitudin etiam commodo. Congue vulputate sem
           hendrerit.
         </Typography>
-        <Link href="" className={styles.link}>
+        <Link href="https://forms.gle/pDG3vC2qXzrqcxVP9" target="_blank" className={styles.link}>
           подать заявку
         </Link>
       </div>

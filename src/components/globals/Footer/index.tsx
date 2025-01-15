@@ -4,6 +4,7 @@ import { IconRD, IconTelegram, IconInstagram, IconVK } from '@/components/icons'
 
 import styles from './footer.module.scss'
 import { Typography } from '@/components/ui/typography'
+import { Link } from '@/components/ui/link'
 
 export async function Footer() {
   return (
@@ -21,17 +22,17 @@ export async function Footer() {
           </Typography>
         </div>
         <div className={styles.net_container}>
-          <a href="" className={styles.net}>
+          <a href="https://t.me/yazykpublishing" target="_blank" className={styles.net}>
             <IconTelegram />
           </a>
-          <a href="" className={styles.net}>
+          <a href="https://vk.com/yazykpublishing" target="_blank" className={styles.net}>
             <IconVK />
           </a>
-          <a href="" className={styles.net}>
+          <a href="https://www.instagram.com/yazykpublishing" target="_blank" className={styles.net}>
             <IconInstagram />
           </a>
         </div>
-        <a href="" className={styles.rd}>
+        <a href="https://russiandino.ru" target="_blank" className={styles.rd}>
           <IconRD />
         </a>
       </div>

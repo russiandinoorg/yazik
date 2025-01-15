@@ -18,6 +18,13 @@ body{
   font-family: var(--jost), sans-serif;
 }
 
+@media screen and (max-width: $laptop-query) {
+  :root{
+    --x: 260px;
+    --y: 440px;
+  }
+}
+
 @media screen and (max-width: $tablet-query) {
   :root{
     --x: 200px;

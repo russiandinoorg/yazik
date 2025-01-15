@@ -5,6 +5,9 @@ import '../../styles/globals.scss'
 
 export const metadata = {
   title: 'Издательство Язык',
+  openGraph: {
+    images: ['/images/og-image.png'],
+  },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

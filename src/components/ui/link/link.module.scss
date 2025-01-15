@@ -19,6 +19,7 @@
   font-size: 24px;
   letter-spacing: 0.02em;
   font-variant: small-caps;
+  text-decoration: none;
 
   transition: all 0.3s ease-in-out 0s;
 
@@ -29,6 +30,10 @@
 
 
 @media screen and (max-width: $tablet-query) {
+  .linkResponsive{
+    height: 52px;
+  }
+
   .linkAccent{
     font-size: 14px;
   }

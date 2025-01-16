@@ -5,12 +5,14 @@ import { Typography } from '@/components/ui/typography';
 
 import styles from './footer.module.scss';
 
+const currentYear = new Date().getFullYear();
+
 export const Footer = () => (
   <footer>
     <div className={styles.container}>
       <div className={styles.copyright}>
         <Typography tag='p' variant='text2'>
-          © Язык, 2024
+          © Язык, {currentYear}
         </Typography>
         <Typography tag='p' variant='text2'>
           Санкт-Петербург

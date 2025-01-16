@@ -1,8 +1,9 @@
 @import '@/styles/variables.scss';
 
 .container{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  // justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-bottom: 30px;
 }
@@ -10,6 +11,7 @@
 .net_container{
   display: flex;
   gap: 24px;
+  justify-self: center;
 }
 
 .net{
@@ -18,15 +20,6 @@
   background-size: 300%;
   z-index: 1;
   transition: all 0.3s ease-in-out 0s;
-  svg{
-    path {
-      transition: all 0.3s ease-in-out 0s;
-    }
-
-    rect {
-      transition: all 0.3s ease-in-out 0s;
-    }
-  }
 
   &::before {
     content: '';
@@ -47,20 +40,46 @@
     filter: blur(20px);
     transform: translate3d(0, 0, 0);
     opacity: 1;
+    }
+}
+
+/*.net svg rect{
+  position: relative;
+  border-radius: 15px;
+  background-size: 300%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.net svg rect::before{
+  display: inline-flex;
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: rgb(191, 157, 71, 0.5);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.net:hover{
+svg rect::before {
+  filter: blur(20px);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
   }
-
-&:hover svg path {
-  //fill: rgba(50, 50, 50, 0.6);
 }
-
-&:hover svg rect {
-  //stroke: rgb(50, 50, 50, 0.6);
-}
-}
+*/
 
 .rd {
   position: relative;
   display: flex;
+  justify-self: end;
   padding: 5px;
   border-radius: 15px;
   background-size: 400%;
@@ -108,7 +127,8 @@
 
 @media screen and (max-width: $tablet-query) {
   .container{
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
+    grid-template-columns: 1fr;
     gap: 35px;
   }
 
@@ -121,10 +141,13 @@
     height: 36px;
   }
 
-  .rd svg{
+  .rd {
+    justify-self: center;
+  svg{
     width: 94px;
     height: 52px;
   }
+}
 
   .copyright{
     gap: 2px;

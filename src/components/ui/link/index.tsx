@@ -28,14 +28,16 @@ export interface LinkProps
 }
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ isLocal = false, className, size, variant, href, ...props }) => {
+  ({ isLocal = false, className, size, variant, href, children, ...props }) => {
     const Comp = isLocal ? NextLink : 'a';
     return (
       <Comp
         className={classnames(linkVariants({ className, size, variant }))}
         href={href}
         {...props}
-      />
+      >
+        <span>{children}</span>
+      </Comp>
     );
   },
 );

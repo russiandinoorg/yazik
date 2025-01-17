@@ -65,8 +65,14 @@
   }
 
   .title2 {
-    font-size: clamp(36px,36px,37px);
+    font-size: 37px;
   }
+
+  _::-webkit-full-page-media,
+_:future,
+:root .title2 {
+  font-size: 36px;
+}
 
   .title3 {
     font-size: 14px;

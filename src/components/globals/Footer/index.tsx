@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import React from 'react';
 
 import { IconRD, IconTelegram, IconInstagram, IconVK } from '@/components/icons';
@@ -31,7 +32,7 @@ export const Footer = () => (
           <IconTelegram />
         </a>
         <a
-          className={styles.net}
+          className={classnames(styles.net, styles.netvk)}
           href='https://vk.com/yazykpublishing'
           rel='noreferrer'
           target='_blank'

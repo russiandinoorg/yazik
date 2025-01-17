@@ -15,11 +15,18 @@
 }
 
 .net{
+  width: 50px;
+  height: 50px;
   position: relative;
   border-radius: 15px;
   background-size: 300%;
   z-index: 1;
   transition: all 0.3s ease-in-out 0s;
+
+  svg{
+    width: 50px;
+    height: 50px;
+  }
 
   &::before {
     content: '';
@@ -42,6 +49,16 @@
     opacity: 1;
     }
 }
+
+/* .netvk{
+  width: 51px;
+  height: 50px;
+
+  svg{
+    width: 51px;
+    height: 50px;
+  }
+}*/ 
 
 /*.net svg rect{
   position: relative;
@@ -119,9 +136,13 @@ svg rect::before {
     gap: 16px;
   }
 
-  .net svg{
+  .net {
     width: 46px;
     height: 46px;
+    svg{
+    width: 46px;
+    height: 46px;
+    }
   }
 }
 
@@ -136,10 +157,14 @@ svg rect::before {
     gap: 10px;
   }
 
-  .net_container svg{
+  .net_container {
+    width: 36px;
+    height: 36px;
+  svg{
     width: 36px;
     height: 36px;
   }
+}
 
   .rd {
     justify-self: center;

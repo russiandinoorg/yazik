@@ -15,6 +15,12 @@
   font-size: 81px;
 }
 
+_::-webkit-full-page-media,
+_:future,
+:root .title2 {
+  font-size: 79px;
+}
+
 .title3 {
   @extend .title;
   font-size: 28px;
@@ -51,8 +57,14 @@
   }
 
   .title2 {
-    font-size: 102px;
+    font-size: 103px;
   }
+
+  _::-webkit-full-page-media,
+_:future,
+:root .title2 {
+  font-size: 102px;
+}
 
   .text1 {
     font-size: 20px;

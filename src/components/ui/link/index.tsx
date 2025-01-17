@@ -13,9 +13,11 @@ const linkVariants = cva('link', {
   variants: {
     size: {
       default: styles.linkResponsive,
+      no: styles.no,
     },
     variant: {
       default: styles.linkAccent,
+      underline: styles.underline,
     },
   },
 });

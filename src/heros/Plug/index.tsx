@@ -28,9 +28,17 @@ export const Plug = () => (
       </div>
       <div className={styles.description_wrapper}>
         <Typography className={styles.description} tag='p' variant='text1'>
-          Lorem ipsum dolor sit amet consectetur. Nibh nulla potenti etiam arcu pellentesque. Eget
-          egestas orci arcu non amet vulputate sollicitudin etiam commodo. Congue vulputate sem
-          hendrerit.
+          Новый проект от авторов{' '}
+          <Link href='https://chtivo.spb.ru/' size='no' target='_blank' variant='underline'>
+            Чтива
+          </Link>{' '}
+          и 
+          <Link href='https://russiandino.ru' size='no' target='_blank' variant='underline'>
+            Русского Динозавра
+          </Link>
+          . Полный цикл издания: от концепции и предпечатки до дистрибуции и продвижения.
+          То же качество, что в Чтиве, но за деньги и быстрее. Пул авторов прямо сейчас
+          формируется здесь:
         </Typography>
         <Link className={styles.link} href='https://forms.gle/pDG3vC2qXzrqcxVP9' target='_blank'>
           подать заявку

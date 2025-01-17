@@ -61,11 +61,11 @@
 
 @media screen and (max-width: $tablet-query) {
   .title1 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .title2 {
-    font-size: 37px;
+    font-size: clamp(36px,36px,37px);
   }
 
   .title3 {

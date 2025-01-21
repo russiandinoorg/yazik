@@ -15,11 +15,11 @@
   font-size: 81px;
 }
 
-_::-webkit-full-page-media,
+/*_::-webkit-full-page-media,
 _:future,
 :root .title2 {
   font-size: 79px;
-}
+}*/
 
 .title3 {
   @extend .title;
@@ -60,11 +60,11 @@ _:future,
     font-size: 103px;
   }
 
-  _::-webkit-full-page-media,
+/*  _::-webkit-full-page-media,
 _:future,
 :root .title2 {
   font-size: 102px;
-}
+}*/
 
   .text1 {
     font-size: 20px;
@@ -80,11 +80,11 @@ _:future,
     font-size: 37px;
   }
 
-  _::-webkit-full-page-media,
+/*  _::-webkit-full-page-media,
 _:future,
 :root .title2 {
   font-size: 36px;
-}
+}*/
 
   .title3 {
     font-size: 14px;

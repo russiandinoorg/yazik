@@ -1,15 +1,14 @@
-import { Book } from '@/components/Book';
 import { Footer } from '@/components/globals/Footer';
+import { IconYazik } from '@/components/icons';
 import { Link } from '@/components/ui/link';
 import { Typography } from '@/components/ui/typography';
 
+import { PlugClient } from './Component.client';
 import styles from './plug.module.scss';
 
 export const Plug = () => (
   <div className={styles.wrapper}>
-    <div className={styles.img_container}>
-      <Book />
-    </div>
+    <PlugClient />
     <div className={styles.content_container}>
       <div className={styles.title}>
         <Typography tag='h2' variant='title2'>

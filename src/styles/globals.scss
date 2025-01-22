@@ -19,6 +19,46 @@ body{
   font-family: var(--jost), sans-serif;
 }
 
+.background{
+  background-color: black;
+  opacity: 1;
+}
+
+.activeBackground{
+  opacity: 0;
+  animation: opacityRevertAnimation 1s ease-in-out;
+}
+
+.opacity{
+  opacity: 0;
+}
+
+.active{
+  opacity: 1;
+  animation: opacityAnimation 2s ease-in-out;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+}
+50% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+@keyframes opacityRevertAnimation {
+  0% {
+    opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+
 @media screen and (max-width: $laptop-query) {
   :root{
     --x: 264.7px;

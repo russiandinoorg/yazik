@@ -1,4 +1,4 @@
-import { Plug } from '@/heros/Plug';
+import { Plug } from '@/heros/Plug/Component';
 
 const PlugPage = () => <Plug />;
 

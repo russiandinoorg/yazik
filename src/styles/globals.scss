@@ -13,6 +13,10 @@
   --z: 58px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   color: $base-color;
   background-color: $base-background-color;
@@ -36,6 +40,14 @@ body{
 .active{
   opacity: 1;
   animation: opacityAnimation 2s ease-in-out;
+}
+
+.removeZIndex{
+  z-index: -1;
+}
+
+.addZIndex{
+  z-index: 2;
 }
 
 @keyframes opacityAnimation {

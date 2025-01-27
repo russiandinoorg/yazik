@@ -3,3 +3,4 @@ export * from './IconInstagram';
 export * from './IconVK';
 export * from './IconRD';
 export * from './IconYazik';
+export * from './IconArrow';

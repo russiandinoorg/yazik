@@ -9,7 +9,7 @@ import styles from './plug.module.scss';
 export const Plug = () => (
   <div className={styles.wrapper}>
     <PlugClient />
-    <div className={styles.content_container}>
+    <div className={styles.content_container} id='content'>
       <div className={styles.title}>
         <Typography tag='h2' variant='title2'>
           издательство

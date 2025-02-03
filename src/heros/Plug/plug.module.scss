@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 130px;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 100dvh;
+  height: 100dvh;
 }
 
 .img_container{
@@ -115,9 +115,9 @@
 @media screen and (max-width: $laptop-query) {
   .wrapper{
     grid-template-columns: 1fr;
-    grid-template-rows: 100svh 100vh;
+    grid-template-rows: 100dvh 100dvh;
     gap: 45px;
-    min-height: 200vh;
+    min-height: 200dvh;
   }
 
   .content_container{
@@ -151,7 +151,7 @@ gap: 20px;
   }
 
   .img_container{
-    height: 101vh;
+    height: 101dvh;
     // background-position: top;
     // background-size: cover;
   }
@@ -179,9 +179,9 @@ gap: 20px;
 
 @media screen and (max-width: $tablet-query) {
   .wrapper{
-    grid-template-rows: 100vh 1fr;
+    grid-template-rows: 100dvh 1fr;
     gap: 40px;
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .content_container{

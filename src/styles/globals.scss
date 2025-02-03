@@ -39,7 +39,7 @@ body{
 
 .active{
   opacity: 1;
-  animation: opacityAnimation 2s ease-in-out;
+  animation: opacityAnimation 3.5s ease-in-out;
 }
 
 .removeZIndex{
@@ -54,9 +54,10 @@ body{
   0% {
     opacity: 0;
 }
-50% {
+40% {
   opacity: 0;
 }
+
 100% {
   opacity: 1;
 }

@@ -115,7 +115,7 @@
 @media screen and (max-width: $laptop-query) {
   .wrapper{
     grid-template-columns: 1fr;
-    grid-template-rows: 100sh 100vh;
+    grid-template-rows: 100svh 100vh;
     gap: 45px;
     min-height: 200vh;
   }

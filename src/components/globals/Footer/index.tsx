@@ -13,7 +13,7 @@ export const Footer = () => (
     <div className={styles.container}>
       <div className={styles.copyright}>
         <Typography tag='p' variant='text2'>
-          © Язык, {currentYear}
+          © Язык, 2024–{currentYear}
         </Typography>
         <Typography tag='p' variant='text2'>
           Санкт-Петербург
@@ -22,30 +22,40 @@ export const Footer = () => (
           #хбдщдбдщ
         </Typography>
       </div>
-      <div className={styles.net_container}>
+      <div className={styles.link_container}>
+        <div className={styles.net_container}>
+          <a
+            className={styles.net}
+            href='https://t.me/yazykpublishing'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <IconTelegram />
+          </a>
+          <a
+            className={classnames(styles.net, styles.netvk)}
+            href='https://vk.com/yazykpublishing'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <IconVK />
+          </a>
+          <a
+            className={styles.net}
+            href='https://www.instagram.com/yazykpublishing'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <IconInstagram />
+          </a>
+        </div>
         <a
-          className={styles.net}
-          href='https://t.me/yazykpublishing'
-          rel='noreferrer'
-          target='_blank'
+          className={styles.mail}
+          href="https://mail.google.com/mail/?view=cm&to=info@yazyk.spb.ru"
+          rel="noreferrer"
+          target="_blank"
         >
-          <IconTelegram />
-        </a>
-        <a
-          className={classnames(styles.net, styles.netvk)}
-          href='https://vk.com/yazykpublishing'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <IconVK />
-        </a>
-        <a
-          className={styles.net}
-          href='https://www.instagram.com/yazykpublishing'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <IconInstagram />
+          info@yazyk.spb.ru
         </a>
       </div>
       <a className={styles.rd} href='https://russiandino.ru' rel='noreferrer' target='_blank'>
